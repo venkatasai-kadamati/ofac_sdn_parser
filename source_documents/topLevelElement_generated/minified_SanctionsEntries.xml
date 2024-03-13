@@ -1,0 +1,19 @@
+<SanctionsEntries>
+    <SanctionsEntry ID="36" ProfileID="36" ListID="1550">
+        <EntryEvent ID="36" EntryEventTypeID="1" LegalBasisID="1">
+            <Comment />
+            <Date CalendarTypeID="1">
+                <Year>1986</Year>
+                <Month>12</Month>
+                <Day>10</Day>
+            </Date>
+        </EntryEvent>
+        <SanctionsMeasure ID="4716" SanctionsTypeID="1705">
+            <DatePeriod CalendarTypeID="1" YearFixed="true" MonthFixed="true" DayFixed="true" />
+        </SanctionsMeasure>
+        <SanctionsMeasure ID="126005" SanctionsTypeID="1">
+            <Comment>CUBA</Comment>
+            <DatePeriod CalendarTypeID="1" YearFixed="true" MonthFixed="true" DayFixed="true" />
+        </SanctionsMeasure>
+    </SanctionsEntry>
+</SanctionsEntries>

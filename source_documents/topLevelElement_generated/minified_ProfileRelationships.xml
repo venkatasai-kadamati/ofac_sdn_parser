@@ -1,0 +1,10 @@
+<ProfileRelationships>
+    <ProfileRelationship ID="6659" From-ProfileID="2686" To-ProfileID="4697" RelationTypeID="15002"
+        RelationQualityID="1" Former="false" SanctionsEntryID="2686">
+        <Comment />
+    </ProfileRelationship>
+    <ProfileRelationship ID="8783" From-ProfileID="4632" To-ProfileID="4697" RelationTypeID="15001"
+        RelationQualityID="1" Former="false" SanctionsEntryID="4632">
+        <Comment />
+    </ProfileRelationship>
+</ProfileRelationships>

@@ -1,0 +1,136 @@
+<ReferenceValueSets>
+    <AliasTypeValues>
+        <AliasType ID="1400">A.K.A.</AliasType>
+        <AliasType ID="1401">F.K.A.</AliasType>
+    </AliasTypeValues>
+    <AreaCodeValues>
+        <AreaCode ID="11029" CountryID="11029" Description="Afghanistan" AreaCodeTypeID="1">AF</AreaCode>
+        <AreaCode ID="11230" CountryID="11230" Description="Cayman Islands" AreaCodeTypeID="1">KY</AreaCode>
+    </AreaCodeValues>
+    <AreaCodeTypeValues>
+        <AreaCodeType ID="1">ISO 3166 (2)</AreaCodeType>
+    </AreaCodeTypeValues>
+    <CalendarTypeValues>
+        <CalendarType ID="1">Gregorian</CalendarType>
+    </CalendarTypeValues>
+    <CountryValues>
+        <Country ID="11029" ISO2="AF">Afghanistan</Country>
+        <Country ID="11030" ISO2="AL">Albania</Country>
+    </CountryValues>
+    <CountryRelevanceValues>
+        <CountryRelevance ID="1413">PRIMARY</CountryRelevance>
+    </CountryRelevanceValues>
+    <DecisionMakingBodyValues>
+        <DecisionMakingBody ID="1" OrganisationID="1">United States Treasury Department</DecisionMakingBody>
+    </DecisionMakingBodyValues>
+    <DetailReferenceValues>
+        <DetailReference ID="702">Bulk Carrier</DetailReference>
+        <DetailReference ID="703">Container Ship</DetailReference>
+    </DetailReferenceValues>
+    <DetailTypeValues>
+        <DetailType ID="1430">DATE</DetailType>
+        <DetailType ID="1431">LOOKUP</DetailType>
+    </DetailTypeValues>
+    <DocNameStatusValues>
+        <DocNameStatus ID="1">Primary Latin</DocNameStatus>
+        <DocNameStatus ID="2">Others</DocNameStatus>
+    </DocNameStatusValues>
+    <EntryEventTypeValues>
+        <EntryEventType ID="1">Created</EntryEventType>
+    </EntryEventTypeValues>
+    <EntryLinkTypeValues />
+    <ExRefTypeValues />
+    <FeatureTypeValues>
+        <FeatureType ID="1" FeatureTypeGroupID="1">Vessel Call Sign</FeatureType>
+        <FeatureType ID="2" FeatureTypeGroupID="1">VESSEL TYPE</FeatureType>
+    </FeatureTypeValues>
+    <FeatureTypeGroupValues>
+        <FeatureTypeGroup ID="1">Unknown</FeatureTypeGroup>
+    </FeatureTypeGroupValues>
+    <IDRegDocDateTypeValues>
+        <IDRegDocDateType ID="1480">Issue Date</IDRegDocDateType>
+        <IDRegDocDateType ID="1481">Expiration Date</IDRegDocDateType>
+    </IDRegDocDateTypeValues>
+    <IDRegDocTypeValues>
+        <IDRegDocType ID="1570">Cedula No.</IDRegDocType>
+        <IDRegDocType ID="1571">Passport</IDRegDocType>
+    </IDRegDocTypeValues>
+    <IdentityFeatureLinkTypeValues>
+        <IdentityFeatureLinkType ID="1">Unknown</IdentityFeatureLinkType>
+    </IdentityFeatureLinkTypeValues>
+    <LegalBasisValues>
+        <LegalBasis ID="1" LegalBasisShortRef="Unknown" LegalBasisTypeID="1" SanctionsProgramID="1">
+            Unknown</LegalBasis>
+        <LegalBasis ID="1807" LegalBasisShortRef="Executive Order 13566 (Libya)"
+            LegalBasisTypeID="1" SanctionsProgramID="1">Executive Order 13566 (Libya)</LegalBasis>
+    </LegalBasisValues>
+    <LegalBasisTypeValues>
+        <LegalBasisType ID="1">Unknown</LegalBasisType>
+    </LegalBasisTypeValues>
+    <ListValues>
+        <List ID="1550">SDN List</List>
+        <List ID="91243">Non-SDN Palestinian Legislative Council List</List>
+    </ListValues>
+    <LocPartTypeValues>
+        <LocPartType ID="1">Unknown</LocPartType>
+        <LocPartType ID="1450">REGION</LocPartType>
+    </LocPartTypeValues>
+    <LocPartValueStatusValues>
+        <LocPartValueStatus ID="1">Main</LocPartValueStatus>
+    </LocPartValueStatusValues>
+    <LocPartValueTypeValues>
+        <LocPartValueType ID="1">Unknown</LocPartValueType>
+    </LocPartValueTypeValues>
+    <NamePartTypeValues>
+        <NamePartType ID="1520">Last Name</NamePartType>
+        <NamePartType ID="1521">First Name</NamePartType>
+    </NamePartTypeValues>
+    <OrganisationValues>
+        <Organisation ID="1" CountryID="11212">State</Organisation>
+    </OrganisationValues>
+    <PartySubTypeValues>
+        <PartySubType ID="1" PartyTypeID="4">Vessel</PartySubType>
+        <PartySubType ID="2" PartyTypeID="4">Aircraft</PartySubType>
+    </PartySubTypeValues>
+    <PartyTypeValues>
+        <PartyType ID="1">Individual</PartyType>
+        <PartyType ID="2">Entity</PartyType>
+    </PartyTypeValues>
+    <RelationQualityValues>
+        <RelationQuality ID="1540">High</RelationQuality>
+        <RelationQuality ID="1541">Low</RelationQuality>
+    </RelationQualityValues>
+    <RelationTypeValues>
+        <RelationType ID="1555" Symmetrical="false">Associate Of</RelationType>
+        <RelationType ID="15001" Symmetrical="false">Providing support to</RelationType>
+    </RelationTypeValues>
+    <ReliabilityValues>
+        <Reliability ID="1560">Confirmed</Reliability>
+        <Reliability ID="1561">False</Reliability>
+    </ReliabilityValues>
+    <SanctionsProgramValues>
+        <SanctionsProgram ID="1" SubsidiaryBodyID="1">Unknown</SanctionsProgram>
+        <SanctionsProgram ID="202" SubsidiaryBodyID="1">CUBA</SanctionsProgram>
+    </SanctionsProgramValues>
+    <SanctionsTypeValues>
+        <SanctionsType ID="1705">Block</SanctionsType>
+        <SanctionsType ID="1706">Reject</SanctionsType>
+    </SanctionsTypeValues>
+    <ScriptValues>
+        <Script ID="160" ScriptCode="Arab">Arabic</Script>
+        <Script ID="230" ScriptCode="Armn">Armenian</Script>
+    </ScriptValues>
+    <ScriptStatusValues>
+        <ScriptStatus ID="1">Unknown</ScriptStatus>
+    </ScriptStatusValues>
+    <SubsidiaryBodyValues>
+        <SubsidiaryBody ID="1" Notional="false" DecisionMakingBodyID="1">Office of Foreign Assets
+            Control</SubsidiaryBody>
+    </SubsidiaryBodyValues>
+    <SupInfoTypeValues />
+    <TargetTypeValues />
+    <ValidityValues>
+        <Validity ID="1">Valid</Validity>
+        <Validity ID="2">Fraudulent</Validity>
+    </ValidityValues>
+</ReferenceValueSets>

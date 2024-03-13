@@ -1,0 +1,44 @@
+<IDRegDocuments>
+    <IDRegDocument ID="1511" IDRegDocTypeID="1570" IdentityID="2967" IssuedBy-CountryID="11066"
+        ValidityID="1">
+        <Comment />
+        <IDRegistrationNo>1625525</IDRegistrationNo>
+        <IssuingAuthority />
+        <DocumentedNameReference DocumentedNameID="2967" />
+    </IDRegDocument>
+    <IDRegDocument ID="4901" IDRegDocTypeID="1571" IdentityID="2327" IssuedBy-CountryID="11082"
+        ValidityID="1">
+        <Comment />
+        <IDRegistrationNo>484824</IDRegistrationNo>
+        <IssuingAuthority />
+        <DocumentDate IDRegDocDateTypeID="1480">
+            <DatePeriod CalendarTypeID="1" YearFixed="false" MonthFixed="false" DayFixed="false">
+                <Start Approximate="false" YearFixed="false" MonthFixed="false" DayFixed="false">
+                    <From>
+                        <Year>1984</Year>
+                        <Month>1</Month>
+                        <Day>18</Day>
+                    </From>
+                    <To>
+                        <Year>1984</Year>
+                        <Month>1</Month>
+                        <Day>18</Day>
+                    </To>
+                </Start>
+                <End Approximate="false" YearFixed="false" MonthFixed="false" DayFixed="false">
+                    <From>
+                        <Year>1984</Year>
+                        <Month>1</Month>
+                        <Day>18</Day>
+                    </From>
+                    <To>
+                        <Year>1984</Year>
+                        <Month>1</Month>
+                        <Day>18</Day>
+                    </To>
+                </End>
+            </DatePeriod>
+        </DocumentDate>
+        <DocumentedNameReference DocumentedNameID="2327" />
+    </IDRegDocument>
+</IDRegDocuments>

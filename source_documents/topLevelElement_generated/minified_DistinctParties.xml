@@ -1,0 +1,38 @@
+<DistinctParty FixedRef="36">
+    <Comment />
+    <Profile ID="36" PartySubTypeID="3">
+        <Identity ID="4375" FixedRef="36" Primary="true" False="false">
+            <Alias FixedRef="36" AliasTypeID="1403" Primary="true" LowQuality="false">
+                <DocumentedName ID="4375" FixedRef="36" DocNameStatusID="1">
+                    <DocumentedNamePart>
+                        <NamePartValue NamePartGroupID="6700" ScriptID="215" ScriptStatusID="1"
+                            Acronym="false">AEROCARIBBEAN AIRLINES</NamePartValue>
+                    </DocumentedNamePart>
+                </DocumentedName>
+            </Alias>
+            <Alias FixedRef="36" AliasTypeID="1400" Primary="false" LowQuality="false">
+                <DocumentedName ID="13178" FixedRef="36" DocNameStatusID="2">
+                    <DocumentedNamePart>
+                        <NamePartValue NamePartGroupID="19387" ScriptID="215" ScriptStatusID="1"
+                            Acronym="false">AERO-CARIBBEAN</NamePartValue>
+                    </DocumentedNamePart>
+                </DocumentedName>
+            </Alias>
+            <NamePartGroups>
+                <MasterNamePartGroup>
+                    <NamePartGroup ID="6700" NamePartTypeID="1525" />
+                </MasterNamePartGroup>
+                <MasterNamePartGroup>
+                    <NamePartGroup ID="19387" NamePartTypeID="1525" />
+                </MasterNamePartGroup>
+            </NamePartGroups>
+        </Identity>
+        <Feature ID="150025" FeatureTypeID="25">
+            <FeatureVersion ID="200025" ReliabilityID="1">
+                <Comment />
+                <VersionLocation LocationID="25" />
+            </FeatureVersion>
+            <IdentityReference IdentityID="4375" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+    </Profile>
+</DistinctParty>

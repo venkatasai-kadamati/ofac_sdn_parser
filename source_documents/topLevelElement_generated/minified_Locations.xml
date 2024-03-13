@@ -1,0 +1,25 @@
+<Locations>
+  <Location ID="201">
+    <LocationAreaCode AreaCodeID="11115" />
+    <LocationCountry CountryID="11115" CountryRelevanceID="1413" />
+    <LocationPart LocPartTypeID="1451">
+      <LocationPartValue Primary="true" LocPartValueTypeID="1" LocPartValueStatusID="1">
+        <Comment />
+        <Value>Dai-Ichi Bldg. 6th Floor, 10-2 Nihombashi, 2-chome, Chuo-ku</Value>
+      </LocationPartValue>
+    </LocationPart>
+    <LocationPart LocPartTypeID="1454">
+      <LocationPartValue Primary="true" LocPartValueTypeID="1" LocPartValueStatusID="1">
+        <Comment />
+        <Value>Tokyo</Value>
+      </LocationPartValue>
+    </LocationPart>
+    <LocationPart LocPartTypeID="1456">
+      <LocationPartValue Primary="true" LocPartValueTypeID="1" LocPartValueStatusID="1">
+        <Comment />
+        <Value>103</Value>
+      </LocationPartValue>
+    </LocationPart>
+    <FeatureVersionReference FeatureVersionID="200201" />
+  </Location>
+</Locations>
