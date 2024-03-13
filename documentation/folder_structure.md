@@ -1,11 +1,13 @@
 
 source_documents
 - consists sdn_advanced.xml, sdn.xml and additional generated minified xml files
+- Generated minified xml are standalone top level elements with 
 
 
 
 ### Folder Structure (Tree)
-C:.
+```(sql)
+rootdir
 ├───documentation
 ├───ofac_sdn_parser
 │   └───generatedcsv
@@ -16,5 +18,6 @@ C:.
 ├───source_documents
 │   └───minified_generated_xml      
 └───utility
+```
 
 <!-- Details -->
