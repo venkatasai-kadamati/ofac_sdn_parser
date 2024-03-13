@@ -1,3 +1,12 @@
+# TODO: Handle the nested comment element @pending
+# TODO Merge the profileRelationships.csv with the rest into a single csv @pending
+
+# !  Python script for parsing xml file and writing the data to a CSV file
+# ?? Parses ProfileRelationships top level element and its nested fragments to csv
+# ** XML file : sdn_advanced.xml
+# ** Using lxml & CSV module
+
+# **--------------------------- SCRIPT START ---------------------------
 import csv
 import xml.etree.ElementTree as ET
 
@@ -14,7 +23,7 @@ ns = {'ns': 'http://www.un.org/sanctions/1.0'}
 profile_relationships = root.find('.//ns:ProfileRelationships', ns)
 
 # Write the CSV file header
-with open('profile_relationships.csv', 'w', newline='') as csvfile:
+with open('ofac_sdn_parser/generatedcsv/profile_relationships.csv', 'w', newline='') as csvfile:
     fieldnames = ['ID', 'From-ProfileID', 'To-ProfileID', 'RelationTypeID', 'RelationQualityID', 'Former', 'SanctionsEntryID']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
@@ -30,6 +39,6 @@ for profile_relationship in profile_relationships.findall('.//ns:ProfileRelation
         'Former': profile_relationship.attrib['Former'],
         'SanctionsEntryID': profile_relationship.attrib['SanctionsEntryID']
     }
-    with open('profile_relationships.csv', 'a', newline='') as csvfile:
+    with open('ofac_sdn_parser/generatedcsv/profile_relationships.csv', 'a', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writerow(data)
