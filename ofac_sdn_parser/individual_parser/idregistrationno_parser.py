@@ -1,16 +1,12 @@
 import csv
 from lxml import etree
 
-# Parse the XML file
 tree = etree.parse("source_documents/sdn_advanced.xml")
 
-# Get the root element
 root = tree.getroot()
 
-# Define the namespace
 ns = {"ns": "http://www.un.org/sanctions/1.0"}
 
-# Write the CSV file header
 with open(
     "ofac_sdn_parser/generated_csv/idregdocuments.csv",
     "w",
@@ -43,7 +39,6 @@ with open(
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
 
-# Write the CSV file data
 for idregdocuments in root.findall(".//ns:IDRegDocuments", ns):
     for idregdocument in idregdocuments.findall(".//ns:IDRegDocument", ns):
         data = {
@@ -72,17 +67,14 @@ for idregdocuments in root.findall(".//ns:IDRegDocuments", ns):
             "DocumentDate_End_To_Day": "",
         }
 
-        # Get the DocumentDate element
         documentdate = idregdocument.find(".//ns:DocumentDate", ns)
         if documentdate is not None:
             data["DocumentDate_IDRegDocDateTypeID"] = documentdate.attrib[
                 "IDRegDocDateTypeID"
             ]
 
-            # Get the DatePeriod element
             dateperiod = documentdate.find(".//ns:DatePeriod", ns)
             if dateperiod is not None:
-                # Get the Start element
                 start = dateperiod.find(".//ns:Start", ns)
                 if start is not None:
                     data["DocumentDate_Start_From_Year"] = start.find(
@@ -104,7 +96,6 @@ for idregdocuments in root.findall(".//ns:IDRegDocuments", ns):
                         ".//ns:To/ns:Day", ns
                     ).text
 
-                # Get the End element
                 end = dateperiod.find(".//ns:End", ns)
                 if end is not None:
                     data["DocumentDate_End_From_Year"] = end.find(
