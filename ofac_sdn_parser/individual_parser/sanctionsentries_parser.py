@@ -1,19 +1,18 @@
 import csv
 from lxml import etree
 
-# Parse the XML file
+
 tree = etree.parse("source_documents/sdn_advanced.xml")
 
-# Get the root element
+
 root = tree.getroot()
 
-# Define the namespace
+
 ns = {"ns": "http://www.un.org/sanctions/1.0"}
 
-# Find the SanctionsEntries element
+
 sanctions_entries = root.find(".//ns:SanctionsEntries", ns)
 
-# Write the CSV file header
 with open(
     "ofac_sdn_parser/generated_csv/sanctions_entries.csv", "w", newline=""
 ) as csvfile:
@@ -37,7 +36,7 @@ with open(
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
 
-# Write the CSV file data
+
 for sanctions_entry in sanctions_entries.findall(".//ns:SanctionsEntry", ns):
     data = {
         "ID": sanctions_entry.attrib["ID"],
@@ -57,7 +56,6 @@ for sanctions_entry in sanctions_entries.findall(".//ns:SanctionsEntry", ns):
         "DayFixed": "",
     }
 
-    # Get the EntryEvent element
     entry_event = sanctions_entry.find(".//ns:EntryEvent", ns)
     if entry_event is not None:
         data["EntryEventTypeID"] = entry_event.attrib["EntryEventTypeID"]
@@ -73,7 +71,6 @@ for sanctions_entry in sanctions_entries.findall(".//ns:SanctionsEntry", ns):
             data["Month"] = date.find(".//ns:Month", ns).text
             data["Day"] = date.find(".//ns:Day", ns).text
 
-    # Get the SanctionsMeasure elements
     sanctions_measures = sanctions_entry.findall(".//ns:SanctionsMeasure", ns)
     for sanctions_measure in sanctions_measures:
         data["SanctionsMeasureID"] = sanctions_measure.attrib["ID"]
