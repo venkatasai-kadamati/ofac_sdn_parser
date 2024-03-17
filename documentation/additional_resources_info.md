@@ -16,7 +16,20 @@
    - Namespaces look like URLs but don't necessarily point to an actual webpage. They serve as unique identifiers.
 
 6. Approachs
+
    - (✔) Direct parsing into CSV # working and using this method
-     - We have identified that the
+     - We have identified that this is better based on the business use case and requirement.
    - (❌) Intermediate parsing into JSON then CSV
-     -
+     - Chose this when the document is having highly nested and uncertain structure with cross references, JSON has an inbuilt approach to define the relations between various nested data and do better transformations.
+
+7. Parsing Methodology
+
+   - code for parsing <ReferenceValueSets> top level element is different from the code for parsing the <SanctionsEntries> top level element.
+
+   - The reason for this is that the structure of the XML data under these two top level elements is different, and therefore requires different parsing strategies.
+
+   - For example, under the <ReferenceValueSets> top level element, there are multiple child elements, each representing a different type of reference data (e.g., <AliasTypeValues>, <AreaCodeValues>, <CountryValues>, etc.). Each of these child elements has a consistent structure, with a set of child elements representing individual records. In this case, we can iterate over each child element and extract the data for each record using a consistent approach.
+
+   - In contrast, under the <SanctionsEntries> top level element, there is a single child element <SanctionsEntry> that contains multiple child elements representing different types of data (e.g., <EntryEvent>, <SanctionsMeasure>, etc.). Each of these child elements has a different structure and requires a different approach to extract the data.
+
+   - Therefore, the code for parsing the <SanctionsEntries> top level element is more complex, as it needs to handle the different child elements and their respective structures. The code uses a combination of find() and findall() methods to locate the relevant child elements, and then extracts the data using a combination of attribute values and text content.
