@@ -33,3 +33,8 @@
    - In contrast, under the <SanctionsEntries> top level element, there is a single child element <SanctionsEntry> that contains multiple child elements representing different types of data (e.g., <EntryEvent>, <SanctionsMeasure>, etc.). Each of these child elements has a different structure and requires a different approach to extract the data.
 
    - Therefore, the code for parsing the <SanctionsEntries> top level element is more complex, as it needs to handle the different child elements and their respective structures. The code uses a combination of find() and findall() methods to locate the relevant child elements, and then extracts the data using a combination of attribute values and text content.
+
+8. date of birth
+   - if present, is likely to be embedded within textual content in a few possible places:
+   DocumentedNamePart: Inside <Alias> or potentially other identity sections.
+   Feature: Occasionally within a <Feature> element, but the feature type would not be specifically dedicated to DoB.
