@@ -1,15 +1,13 @@
 import xml.etree.ElementTree as ET
 
-# Parse the XML file
+#
 tree = ET.parse("sdn_advanced.xml")
 
-# Get the root element
 root = tree.getroot()
 
-# Define the namespace
 ns = {"ns": "http://www.un.org/sanctions/1.0"}
 
-# Parse AliasTypeValues
+
 alias_types = {}
 for alias_type in root.find(".//ns:AliasTypeValues", ns).findall(".//ns:AliasType", ns):
     alias_id = alias_type.attrib["ID"]
@@ -281,4 +279,4 @@ for validity in root.findall("ns:ValidityValues/ns:Validity", ns):
     validity_value = validity.text
     validity_values[validity_id] = validity_value
 
-# Print
+print(validity_values)

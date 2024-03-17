@@ -13,5 +13,10 @@
 5. Namespaces
 
    - You can't just choose any namespace you like when parsing an existing XML file. Your code must use the namespace that the XML document was designed with.
+   - Namespaces look like URLs but don't necessarily point to an actual webpage. They serve as unique identifiers.
 
-- Namespaces look like URLs but don't necessarily point to an actual webpage. They serve as unique identifiers.
+6. Approachs
+   - (✔) Direct parsing into CSV # working and using this method
+     - We have identified that the
+   - (❌) Intermediate parsing into JSON then CSV
+     -
