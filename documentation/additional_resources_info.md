@@ -35,6 +35,28 @@
    - Therefore, the code for parsing the <SanctionsEntries> top level element is more complex, as it needs to handle the different child elements and their respective structures. The code uses a combination of find() and findall() methods to locate the relevant child elements, and then extracts the data using a combination of attribute values and text content.
 
 8. date of birth
+
    - if present, is likely to be embedded within textual content in a few possible places:
-   DocumentedNamePart: Inside <Alias> or potentially other identity sections.
-   Feature: Occasionally within a <Feature> element, but the feature type would not be specifically dedicated to DoB.
+     DocumentedNamePart: Inside <Alias> or potentially other identity sections.
+     Feature: Occasionally within a <Feature> element, but the feature type would not be specifically dedicated to DoB.
+
+9. Latin vs non latin words
+
+- A Latin word is a word that is written using the Latin alphabet. The Latin alphabet is the most widely used alphabet in the world, and it is used to write many different languages, including English, French, Spanish, German, and Italian.
+
+- A non-Latin word is a word that is not written using the Latin alphabet. There are many different non-Latin alphabets in the world, including the Arabic alphabet, the Chinese alphabet, and the Cyrillic alphabet.
+
+- Here are some examples of Latin and non-Latin words:
+
+  Latin words:
+  English: hello\* French: bonjour
+  Spanish: hola
+  German: hallo
+  Italian: ciao
+
+  Non-Latin words:
+  Arabic: مرحبا (marhaba)
+  Chinese: 你好 (nǐ hǎo)
+  Cyrillic: привет (privet)
+
+  \*\* Solution: Byte Order Mark (BOM) - multi encoding

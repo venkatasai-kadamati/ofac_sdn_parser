@@ -1,23 +1,20 @@
 import csv
 from lxml import etree
 
-# Parse the XML file
 tree = etree.parse("source_documents/sdn_advanced.xml")
 root = tree.getroot()
 
-# Define the namespace
+# namespace
 ns = {"ns": "http://www.un.org/sanctions/1.0"}
 
-# Find the ReferenceValueSets element
 ref_values = root.find(".//ns:ReferenceValueSets", ns)
 
-# Create a CSV writer object
 with open(
     "ofac_sdn_parser/generated_csv/reference_values.csv", "w", newline=""
 ) as csvfile:
     writer = csv.writer(csvfile)
 
-    # Write the header row
+    # header row
     writer.writerow(
         [
             "Element",
@@ -35,7 +32,6 @@ with open(
         ]
     )
 
-    # Loop through the child elements of ReferenceValueSets and write the data to the CSV
     for child in ref_values:
         if child.tag == "{http://www.un.org/sanctions/1.0}AliasTypeValues":
             for alias_type in child.findall(".//ns:AliasType", ns):

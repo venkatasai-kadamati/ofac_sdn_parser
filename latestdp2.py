@@ -1,7 +1,7 @@
 import csv
 from lxml import etree
 
-# Replace these paths with the actual paths to your XML and CSV files
+
 xml_file_path = "source_documents/sdn_advanced.xml"
 csv_file_path = "output2.csv"
 
